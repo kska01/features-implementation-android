@@ -1,11 +1,27 @@
 package com.example.viewpager2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2
+import com.example.viewpager2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.pager.apply {
+            adapter = ViewPagerAdapter(getFoodList())
+            orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        }
+    }
+
+    private fun getFoodList(): ArrayList<Int> {
+        return arrayListOf<Int>(R.drawable.food1, R.drawable.food2, R.drawable.food3, R.drawable.food4)
     }
 }
