@@ -11,11 +11,11 @@ class ViewPagerAdapter(var foodList: ArrayList<Int>) :
 
     inner class PagerViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
-        val food: ImageView = view.findViewById<ImageView>(R.id.imageView_food)
+        val food: ImageView = view.findViewById(R.id.imageView_food)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.food_list_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.food_list_item, parent, false)
         return PagerViewHolder(view)
     }
 
