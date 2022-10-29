@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
             adapter = ViewPagerAdapter(getFoodList())
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
         }
+
+        val springDotsIndicator = binding.springDotsIndicator
+        springDotsIndicator.attachTo(binding.pager)
     }
 
     private fun getFoodList(): ArrayList<Int> {
