@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class ViewPagerAdapter(var foodList: ArrayList<Int>) :
+class ViewPagerAdapter(var fruitList: ArrayList<Int>) :
     RecyclerView.Adapter<ViewPagerAdapter.PagerViewHolder>() {
 
     inner class PagerViewHolder(view: View) : RecyclerView.ViewHolder(view){
@@ -15,14 +15,14 @@ class ViewPagerAdapter(var foodList: ArrayList<Int>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.food_list_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.fruit_list_item, parent, false)
         return PagerViewHolder(view)
     }
 
-    override fun getItemCount(): Int = foodList.size
+    override fun getItemCount(): Int = fruitList.size
 
     override fun onBindViewHolder(holder: PagerViewHolder, position: Int) {
-        holder.food.setImageResource(foodList[position])
+        holder.food.setImageResource(fruitList[position])
     }
 
 

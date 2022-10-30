@@ -4,25 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/spring_dots_indicator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/spring_dots_indicator"/>
-
+        app:layout_constraintVertical_bias="0.695" />
 
     <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
         android:id="@+id/spring_dots_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="168dp"
         app:dampingRatio="0.5"
         app:dotsColor="@color/blue_grey"
         app:dotsCornerRadius="20dp"
@@ -33,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pager"
+        app:layout_constraintTop_toBottomOf="@+id/pager"
         app:stiffness="300"
         tools:ignore="MissingConstraints" />
 

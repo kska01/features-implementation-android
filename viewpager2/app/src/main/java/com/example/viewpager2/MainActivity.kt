@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getFoodList(): ArrayList<Int> {
-        return arrayListOf<Int>(R.drawable.food1, R.drawable.food2, R.drawable.food3, R.drawable.food4)
+        return arrayListOf<Int>(
+            R.drawable.fruit1,
+            R.drawable.fruit2,
+            R.drawable.fruit3,
+            R.drawable.fruit4,
+            R.drawable.img_fruit5)
     }
 }
