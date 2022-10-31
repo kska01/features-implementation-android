@@ -8,9 +8,10 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.viewpager2forbanner.data.DataPage
 
-class ViewPagerAdapter(private val listData: ArrayList<DataPage>) : RecyclerView.Adapter<ViewPagerAdapter.PagerViewHolder>() {
+class ViewPagerAdapter(private val listData: ArrayList<DataPage>) :
+    RecyclerView.Adapter<ViewPagerAdapter.PagerViewHolder>() {
 
-    class PagerViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    class PagerViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: AppCompatTextView = view.findViewById(R.id.tv_title)
         val background: RelativeLayout = view.findViewById(R.id.rl_layout)
     }
@@ -23,9 +24,11 @@ class ViewPagerAdapter(private val listData: ArrayList<DataPage>) : RecyclerView
     }
 
     override fun onBindViewHolder(holder: PagerViewHolder, position: Int) {
-        holder.textView.text = listData[position].title
-        holder.background.setBackgroundResource(listData[position].color)
+        val item = listData[position % listData.size]
+        holder.textView.text = item.title
+        holder.background.setBackgroundResource(item.color)
     }
 
-    override fun getItemCount(): Int = listData.size
+    // 무한 스크롤 효과를 내기 위해 아이템의 숫자를 최대한 크게 설정해 준다.
+    override fun getItemCount(): Int = Int.MAX_VALUE
 }
