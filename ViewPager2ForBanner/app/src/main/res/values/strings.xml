@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ViewPager2ForBanner</string>
+    <string name="viewpager2_banner">%1$d / %2$d</string>
 </resources>
