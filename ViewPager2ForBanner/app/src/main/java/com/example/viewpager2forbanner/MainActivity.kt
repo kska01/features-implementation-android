@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    // 자동 스크롤의 간격이 아닌 스크롤 되는 에니메이션의 속도 조절. ViewPager2 자체에 Duration 기능이
+    // 자동 스크롤의 간격이 아닌 스크롤 되는 애니메이션의 속도 조절. ViewPager2 자체에 Duration 기능이
     // 없어 확장 함수를 만든다.
     fun ViewPager2.setCurrentItemWithDuration(
         item: Int,
