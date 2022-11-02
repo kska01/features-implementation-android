@@ -3,9 +3,13 @@
 
 ### 각 폴더별 설명
 - viewpager2 
+  
+  <img width="10%" src="https://user-images.githubusercontent.com/81162740/199494555-aa3b1d52-5ea4-4bb5-b3c8-767f8aab049c.gif">
+  
   - ViewPager2에 indicator를 더하여 가로 슬라이딩 기능을 구현.
   - indicator는 라이브러리를 찾아서 사용했습니다. <https://github.com/tommybuonomo/dotsindicator>
   - image들은 unsplash.com에서 다운받아 사용했습니다. <https://unsplash.com/>
+  
   
 - ViewPager2ForBanner
   - Viewpager2에 AutoScroll, 페이지 번호 표시기능을 더하여 자동으로 스크롤 되는 광고 배너와 같은 기능을 구현.
