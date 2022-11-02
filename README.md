@@ -1,5 +1,5 @@
 # features-implementation-android
-안드로이드의 기능들을 구현해본 것들을 저장한 공간 입니다.
+안드로이드의 기능들을 구현하고 저장하는 공간 입니다.
 
 ### 각 폴더별 설명
 - viewpager2 
