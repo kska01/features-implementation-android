@@ -48,8 +48,9 @@ class MainActivity : AppCompatActivity() {
             // 사용자가 스크롤 했을 때 하단에 표시되는 숫자의 변경
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
+                bannerPosition = position
                 binding.txtCurrentBanner.text =
-                    getString(R.string.viewpager2_banner, (position % list.size) + 1, list.size)
+                    getString(R.string.viewpager2_banner, (bannerPosition % list.size) + 1, list.size)
             }
 
             // Scroll 의 상태 정보를 이용하여 자동 스크롤을 구현한다.
