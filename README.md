@@ -12,6 +12,9 @@
   
   
 - ViewPager2ForBanner
+
+  <img width="10%" src="https://user-images.githubusercontent.com/81162740/199497484-d63e2d67-d3e5-43de-bacd-485ec169623d.gif">
+
   - Viewpager2에 AutoScroll, 페이지 번호 표시기능을 더하여 자동으로 스크롤 되는 광고 배너와 같은 기능을 구현.
   - 이 기능은 Android Technote라는 블로그를 참조.. 아니 거의 클론 코딩하며 배웠습니다. <https://bumjae.tistory.com/65>
   - 위의 블로그를 따라 구현해 보면 AutoScroll의 애니메이션 속도 구현이 안드로이드의 낮은 버전에서 오류를 일으키는데, 간편한 프로그래밍이라는 블로그를 참조하여 해결하였습니다. <https://kmight0518.tistory.com/75>
