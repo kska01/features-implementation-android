@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ViewPager2WithFragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum">Create a layout file that you\'ll later use for
+        the content of a fragment. You also need to define a string for the
+        contents of the fragment. The following example contains a text view that
+        displays some text
+    Create a Fragment class that returns the layout that you just created in the
+        onCreateView() method. You can then create instances of this fragment
+        in the parent activity whenever you need a new page to display to the user:</string>
+</resources>
