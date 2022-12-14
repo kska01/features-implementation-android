@@ -41,10 +41,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.viewPager.adapter = ViewPagerAdapter(list)
         binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+
         // banner 의 숫자 설정. 아래의 registerOnPageChangeCallback 함수와 중복 되므로 주석 처리함.
 //        binding.txtCurrentBanner.text = getString(R.string.viewpager2_banner, 1, list.size)
         // banner 를 드래그해서 넘겼을 때 포지션 값을 변경해주는 callBack 함수 등록
         binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+
             // 사용자가 스크롤 했을 때 하단에 표시되는 숫자의 변경
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
