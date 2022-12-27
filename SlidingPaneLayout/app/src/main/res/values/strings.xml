@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SlidingPaneLayout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="red">빨강</string>
+    <string name="orange">주황</string>
+    <string name="yellow">노랑</string>
+    <string name="green">초록</string>
+    <string name="blue">파랑</string>
+    <string name="indigo">남색</string>
+    <string name="purple">보라</string>
 </resources>

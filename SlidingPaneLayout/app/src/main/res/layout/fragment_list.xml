@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_pane_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/detail_pane_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>
